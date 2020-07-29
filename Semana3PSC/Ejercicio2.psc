@@ -29,15 +29,14 @@ Algoritmo CalculoAreaPerimetro
 		"3":
 			Definir  bMenor, bMayor, l1, l2, difBases, difLados Como Real
 			Escribir "Ha elegido trabajar con un trapecio."
-			Escribir "Inserte la medida de la base mayor: "
+			Escribir "Ingrese la medida de la base mayor: "
 			Leer bMayor
-			Escribir  "Inserte la medida de la base menor: "
+			Escribir  "Ingrese la medida de la base menor: "
 			Leer bMenor
-			Escribir  "Inserte la medida del lado menor: "
+			Escribir  "Ingrese la medida del lado menor: "
 			Leer l1
-			Escribir "Inserte la medida del lado mayor: "
+			Escribir "Ingrese la medida del lado mayor: "
 			Leer l2
-			Definir ladoMenorEsMayor como Logico
 			Mientras l1 > l2 Hacer
 				Escribir "El lado menor ingresado es más grande que el lado menor. Por favor ingréselos en orden correcto."
 				Escribir "Ingrese el lado menor: "
