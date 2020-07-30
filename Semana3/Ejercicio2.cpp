@@ -1,9 +1,9 @@
 #include "iostream"
 #include <math.h>
-#include <conio.h>
+//#include <conio.h>
 using namespace std;
 
-int main(){
+int main(int argc, char* argv[]){
 
     int figura;
     double area, perimetro;
@@ -84,6 +84,6 @@ int main(){
         break;
     }
 
-    getch();
+ //   getch();
     return 0;
 }
