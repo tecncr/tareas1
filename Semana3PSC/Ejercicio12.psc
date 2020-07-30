@@ -4,7 +4,7 @@ Algoritmo salarioSemana
 	Escribir "Ingrese la cantidad de horas trabajadas: "
 	Leer horasTrabajadas
 	pagoParcial <- (35 * horasTrabajadas)
-	descuentoAFP <- pagoParcial * 0.19
+	descuentoAFP <- pagoParcial * 0.05
 	pagoFinal <- pagoParcial - descuentoAFP
-	Escribir "Su salario final será de S/ ",pagoFinal
+	Escribir "Su salario final serÃ¡ de S/ ",pagoFinal
 FinAlgoritmo
