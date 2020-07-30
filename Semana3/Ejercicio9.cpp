@@ -43,5 +43,5 @@ int main(int argc, char* argv[])
 	cout << cantidadEfectivo[6] << " billetes de " << valorEfectivo[6] << " soles." << endl;
 
     return 0;
-//  getch();    (Descomentar en Windows)
+//  getch(); (Capturar caracter siguiente para evitar que se cierre la ventana en Windows)
 }

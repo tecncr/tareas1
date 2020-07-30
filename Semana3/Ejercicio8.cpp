@@ -16,6 +16,6 @@ int main(int argc, char* argv[]){
 	bits = 8 * bytes;
 	cout << gb << " gigabytes equivale a "<< bits << " bits." << endl;
 
-//  getch();    (Descomentar en Windows)
+//  getch(); (Capturar caracter siguiente para evitar que se cierre la ventana en Windows)
     return 0;
 }

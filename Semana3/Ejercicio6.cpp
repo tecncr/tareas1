@@ -38,6 +38,6 @@ int main(int argc, char* argv[]){
 
 	cout << "Usted ha vivido "<< totalDays << " días aproximadamente." << endl;
 
-//	getch();	(Descomentar en Windows)
+//  getch(); (Capturar caracter siguiente para evitar que se cierre la ventana en Windows)
     return 0;
 }

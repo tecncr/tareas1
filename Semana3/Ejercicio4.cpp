@@ -1,5 +1,5 @@
 #include "iostream"
-#include <conio.h>
+// #include <conio.h> (Descomentar en Windows)
 using namespace std;
 
 int main(int argc, char* argv[]){
