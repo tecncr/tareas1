@@ -1,5 +1,7 @@
 Algoritmo maximoMonedasBilletes
 	
+	Definir sueldo Como Entero
+	
 	Dimension valorEfectivo[7]
 	valorEfectivo[1] <- 1
 	valorEfectivo[2] <- 2
@@ -30,12 +32,12 @@ Algoritmo maximoMonedasBilletes
 	FinMientras
 	
 	Escribir "Este pago se puede realizar en: "
-	Escribir cantidadEfectivo[1] " monedas de ",valorEfectivo[1], " sol."
-	Escribir cantidadEfectivo[2] " monedas de ",valorEfectivo[2], " soles."
-	Escribir cantidadEfectivo[3] " monedas de ",valorEfectivo[3], " soles."
-	Escribir cantidadEfectivo[4] " billetes de ",valorEfectivo[4], " soles."
-	Escribir cantidadEfectivo[5] " billetes de ",valorEfectivo[5], " soles."
-	Escribir cantidadEfectivo[6] " billetes de ",valorEfectivo[6], " soles."
-	Escribir cantidadEfectivo[7] " billetes de ",valorEfectivo[7], " soles."
+	Escribir cantidadEfectivo[1]," monedas de ",valorEfectivo[1], " sol."
+	Escribir cantidadEfectivo[2]," monedas de ",valorEfectivo[2], " soles."
+	Escribir cantidadEfectivo[3]," monedas de ",valorEfectivo[3], " soles."
+	Escribir cantidadEfectivo[4]," billetes de ",valorEfectivo[4], " soles."
+	Escribir cantidadEfectivo[5]," billetes de ",valorEfectivo[5], " soles."
+	Escribir cantidadEfectivo[6]," billetes de ",valorEfectivo[6], " soles."
+	Escribir cantidadEfectivo[7]," billetes de ",valorEfectivo[7], " soles."
 	
 FinAlgoritmo
