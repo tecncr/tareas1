@@ -89,7 +89,7 @@ int main(int argc, char* argv[]){
             cout << "Ingrese la altura: ";
             cin >> altura;
 
-            area = 2 * (largo * ancho) + 4 * (largo * altura);
+            area = 2 * ((largo * ancho) + (ancho * altura) + (largo * altura));
             perimetro = 4 * (largo + ancho + altura);
 
             cout << endl << "\tEl area total del paralelepipedo es: " << area << " unidades cuadradas, y el perimetro mide: " << perimetro << " unidades.\n" << endl;
