@@ -59,7 +59,7 @@ Algoritmo CalculoAreaPerimetro
 				Leer ancho
 				Escribir "Ingrese la altura: "
 				Leer altura
-				area <- 2 * (largo * ancho) + 4 * (largo * altura)
+				area <- 2 * ((largo * ancho) + (ancho * altura) + (largo * altura))
 				perimetro <- 4 * (largo + ancho + altura)
 				Escribir "El área total del paralelepípedo es: ",area," unidades cuadradas, y el perímetro mide: ",perimetro," unidades."
 			"5":
