@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 {
 
     int sueldo;
-	int valorEfectivo [7] = {1,2,5,10,20,50,100};
+    int valorEfectivo [7] = {1,2,5,10,20,50,100};
     int cantidadEfectivo [7] = {0,0,0,0,0,0,0};
 
 	cout << "Programa que distribuye un pago en la maxima cantidad posible de monedas y billetes." << endl;
