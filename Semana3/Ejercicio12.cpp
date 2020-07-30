@@ -9,7 +9,7 @@ int main(int argc, char* argv[]){
 	cin >> horasTrabajadas;
 
 	pagoParcial = (35 * horasTrabajadas);
-	descuentoAFP = pagoParcial * 0.19;
+	descuentoAFP = pagoParcial * 0.05;
 	pagoFinal = pagoParcial - descuentoAFP;
 
 	cout << "Su salario final será de S/ " << pagoFinal;
