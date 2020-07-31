@@ -5,7 +5,7 @@ Algoritmo PerimetroSuperficieRectangulo
 	Leer base
 	Escribir "Ingrese el valor de la altura: "
 	Leer altura
-	superficie = base * altura
+	superficie <- base * altura
 	perimetro <- (base + altura) * 2
 	Escribir "La superficie mide ",superficie," unidades cuadradas y el perimetro mide ",perimetro," unidades."
 FinAlgoritmo

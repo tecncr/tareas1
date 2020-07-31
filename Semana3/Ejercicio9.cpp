@@ -4,7 +4,6 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-
     int sueldo;
     int valorEfectivo [7] = {1,2,5,10,20,50,100};
     int cantidadEfectivo [7] = {0,0,0,0,0,0,0};
@@ -17,6 +16,7 @@ int main(int argc, char* argv[])
     {
 		cout << "El monto del pago a realizar no puede ser negativo." << endl;
 		cout << "Por favor ingrese el pago del trabajador: ";
+		cin >> sueldo;
 	}
 
     int difOperable = sueldo;
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 	    }
     }
     
-	cout << "Este pago se puede realizar en: "<< endl;
+	cout << "Este pago de " << sueldo <<" soles se puede realizar en: "<< endl;
 	cout << cantidadEfectivo[0] << " monedas de " << valorEfectivo[0] << " sol."<< endl;
 	cout << cantidadEfectivo[1] << " monedas de " << valorEfectivo[1] << " soles."<< endl;
 	cout << cantidadEfectivo[2] << " monedas de " << valorEfectivo[2] << " soles." << endl;

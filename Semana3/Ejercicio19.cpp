@@ -10,7 +10,7 @@ int main(int argc, char* argv[]){
 	cout << "Ingrese el radio: ";
 	cin >> radio;
 
-	volumen = 4/3 * M_PI * pow(radio,3);
+	volumen = (4 * M_PI * pow(radio,3))/3;
 
 	cout << "El volumen de la esfera es " << volumen << " unidades cubicas." << endl;
 

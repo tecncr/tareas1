@@ -20,13 +20,14 @@ Algoritmo maximoMonedasBilletes
 	Mientras sueldo < 0
 		Escribir "El monto del pago a realizar no puede ser negativo."
 		Escribir "Por favor ingrese el pago del trabajador: "
+		Leer sueldo
 	FinMientras
 	
 	Mientras  sueldo <> 0
 		Para i<-1 Hasta 7 Con Paso 1 Hacer
 			Si sueldo - valorEfectivo[i] >= 0 Entonces
-				sueldo = sueldo - valorEfectivo[i]
-				cantidadEfectivo[i] = cantidadEfectivo[i] + 1
+				sueldo <- sueldo - valorEfectivo[i]
+				cantidadEfectivo[i] <- cantidadEfectivo[i] + 1
 			Fin Si
 		Fin Para
 	FinMientras
