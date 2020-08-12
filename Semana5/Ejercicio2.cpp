@@ -1,4 +1,5 @@
 #include "iostream"
+#include <conio.h>
 using namespace std;
 
 int main(int argc, char * argv[]){
@@ -32,6 +33,9 @@ int main(int argc, char * argv[]){
 	if (operador == "/") {
 		cout << "El resultado de la division es: " << entrada1/entrada2 << endl;
 	}
+
+	cout << endl << "Presione cualquier tecla para salir.";
+	getch();
 
 	return 0;
 

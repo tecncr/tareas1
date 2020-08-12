@@ -1,4 +1,5 @@
 #include "iostream"
+#include <conio.h>
 using namespace std;
 
 int main(int argc, char * argv[]){
@@ -38,6 +39,9 @@ int main(int argc, char * argv[]){
 			}
 		}
 	}
+
+	cout << endl << "Presione cualquier tecla para salir.";
+	getch();
 
 	return 0;
 
