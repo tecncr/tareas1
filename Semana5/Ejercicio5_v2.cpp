@@ -42,7 +42,8 @@ int main(int argc, char * argv[]){
     //Imprimiendo el resultado
     if (segundos == segundosPrevios + 1 or (segundosPrevios == 59 and segundos == 0))
     {
-      system("CLS");
+      system("clear");
+//    system('CLS'); (Descomentar en Windows/DOS)  
 
       cout << "La hora es: \t\t\t\t"
       << (horas < 10 ? "0" : "") << horas <<":" << (minutos < 10 ? "0" : "") << minutos << ":"
