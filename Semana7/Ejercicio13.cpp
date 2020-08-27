@@ -2,13 +2,14 @@
 using namespace std;
 
 int main(int argc, char* argv[]){
+
     int age, currentMonth, currentDay, daysFromYears, daysFromMonths, totalDays;
 	
 	cout << "Programa para calcular los dias aproximados que una persona lleva viva." << endl;
 	cout << "Ingrese su edad: ";
 	cin >> age;
 	
-	while (!(age < 0 && age > 200))
+	while (!(age < 0 and age > 200))
 	{
 		cout << "Su edad está fuera de rango. Por favor ingrese una edad valida: ";
 		cin >> age;
@@ -17,7 +18,7 @@ int main(int argc, char* argv[]){
 	cout <<  "Ingrese el numero del mes actual: ";
 	cin >> currentMonth;
 	
-    while (!(1 <= currentMonth && currentMonth <= 12)){
+    while (!(1 <= currentMonth and currentMonth <= 12)){
         cout << "El mes ingresado es invalido, por favor ingrese un mes valido (entre 1 y 12): ";
 		cin >> currentMonth;
     }
@@ -25,7 +26,7 @@ int main(int argc, char* argv[]){
 	cout << "Ingrese el dia del mes actual: ";
 	cin >> currentDay;
 	
-	while (!(1 <= currentDay && currentDay <= 31))
+	while (!(1 <= currentDay and currentDay <= 31))
 	{
 		cout << "El dia ingresado es invalido, por favor ingrese un dia valido (entre 1 y 31): ";
 		cin >> currentDay;
