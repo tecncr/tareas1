@@ -1,14 +1,12 @@
 Funcion inverso <- obtener_inverso (num)
 	Definir a, inverso, res Como Entero
-	
 	a <- num
 	inverso <- 0
-	
 	Mientras a > 0
 		res <- a%10
 		inverso <- inverso*10 + res
 		a <- trunc(a/10)
-	FinMientras	
+	FinMientras
 Fin Funcion
 
 

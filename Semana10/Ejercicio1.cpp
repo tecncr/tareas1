@@ -15,7 +15,7 @@ int obtener_inverso(int num) {
 	return inverso;
 }
 
-int main() {
+int main(int argc, char * argv[]){
 	int n;
 
 	cout << "Programa que indica si un numero es capicua o no." << endl;
