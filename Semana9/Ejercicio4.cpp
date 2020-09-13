@@ -13,10 +13,14 @@ int sumadivpropios(int num){
     return suma;
 }
 
-int main(){
+
+int main(int argc, char * argv[]){
+
     int n, div_i, div_j;
+
     cout << "Programa que calcula numeros amigos hasta N." << endl;
     cout << "Ingrese el valor de N: "; cin >> n;
+
     for (int i=1; i<n; i++){
         div_i = sumadivpropios(i);
         for (int j=1; j<n; j++){
@@ -26,5 +30,6 @@ int main(){
             }
         }
     }
+    
     return 0;
 }
