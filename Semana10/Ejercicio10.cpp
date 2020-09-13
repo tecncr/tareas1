@@ -5,7 +5,7 @@ using namespace std;
 int iv(int max, string var_name) {
 	int num;
 	do {
-		cout << "Ingrese el valor de " << var_name;
+		cout << "Ingrese el valor de " << var_name << ": ";
 		cin >> num;
 		if (num>max) {
 			cout << "El valor de " << var_name << " debe ser como maximo " << max << endl;
@@ -67,4 +67,3 @@ int main(int argc, char * argv[]){
 	
 	return 0;
 }
-

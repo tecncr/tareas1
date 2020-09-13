@@ -1,9 +1,5 @@
-Algoritmo SUMATORIA_FIBONACCI
-	
-	Definir num, sumatoria, n1, n2, n3, i Como Entero
-	
-	Escribir "Algoritmo que calcula la suma de los N primeros números de Fibonacci"
-	
+Funcion num <- ingresar_validar
+	Definir num Como Entero
 	Repetir
 		Escribir Sin Saltar "Ingrese el valor de N: "
 		Leer num
@@ -16,6 +12,15 @@ Algoritmo SUMATORIA_FIBONACCI
 			Escribir "Inténtelo nuevamente."
 		FinSi
 	Mientras Que num < 0 o num > 45
+FinFuncion
+
+
+Algoritmo SUMATORIA_FIBONACCI
+	
+	Definir num, sumatoria, n1, n2, n3, i Como Entero
+	
+	Escribir "Algoritmo que calcula la suma de los N primeros números de Fibonacci"
+	num <- ingresar_validar
 	
 	n1 <- 0
 	n2 <- 1

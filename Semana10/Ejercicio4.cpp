@@ -2,13 +2,9 @@
 #include <math.h>
 
 using namespace std;
-int main(int argc, char * argv[]){
 
-	int i, n1, n2 ,n3, num;
-	long long int sumatoria;
-
-	cout << "Algoritmo que calcula la suma de los N primeros numeros de Fibonacci" << endl;
-	
+int ingresar_validar(){
+	int num;
 	do {
 		cout << "Ingrese el valor de N: ";
 		cin >> num;
@@ -17,7 +13,19 @@ int main(int argc, char * argv[]){
 			cout << "Intentelo nuevamente." << endl;
 		}
 	} while (num<0);
+
+	return num;
+}
+
+int main(int argc, char * argv[]){
+
+	int i, n1, n2 ,n3, num;
+	long long int sumatoria;
+
+	cout << "Algoritmo que calcula la suma de los N primeros numeros de Fibonacci" << endl;
 	
+	num = ingresar_validar();
+
 	n1 = 0;
 	n2 = 1;
 	n3 = 0;

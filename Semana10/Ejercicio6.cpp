@@ -1,6 +1,4 @@
 #include "iostream"
-#include <math.h>
-
 using namespace std;
 
 int ingresar_validar(string var_name, int max, int min) {
@@ -27,7 +25,7 @@ int ingresar_validar(string var_name, int max, int min) {
 int obtener_edad() {
 	int anio;
 	int edad;
-	anio = ingresar_validar("El año de nacimiento del conductor",2005,1920);
+	anio = ingresar_validar("El anio de nacimiento del conductor",2005,1920);
 	edad = 2020-anio;
 	return edad;
 }
@@ -37,7 +35,7 @@ int validar_unodos(string uno_string, string dos_string) {
 	do {
 		cout << "Escriba 1 si " << uno_string << endl;
 		cout << "Escriba 2 si " << dos_string << endl;
-		cout << "Su opcion: " << endl;
+		cout << "Su opcion: ";
 		cin >> uno_dos;
 		if (uno_dos!=1 && uno_dos!=2) {
 			cout << "Opcion invalida, solo se admiten los valores 1 o 2." << endl;
@@ -46,66 +44,64 @@ int validar_unodos(string uno_string, string dos_string) {
 	return uno_dos;
 }
 
-int main(int argc, char * argv[]){
-	
-	int cdatos, cont0, cont1, cont2, cont3, i;
-	float p_ci, p_ed, p_ed2, p_sx;
+int main() {
+	int cdatos, i;
+	float p_ci, p_ed, p_ed2, p_sx, cont0, cont1, cont2, cont3;
+
 	cont0 = 0;
 	cont1 = 0;
 	cont2 = 0;
 	cont3 = 0;
 
-	cdatos = ingresar_validar("La cantidad de datos que desea procesar",100,0);
+	cdatos = ingresar_validar("La cantidad de datos que desea procesar",1000000,0);
 
-	int ciudades[cdatos], edades[cdatos], sexos[cdatos];
+	int edades[cdatos], sexos[cdatos], ciudades[cdatos];
 
-	for (i=0; i<=cdatos-1; i++) {
-		cout << endl; // no hay forma directa de borrar la pantalla con C++ estandar
+	for (i=0;i<=cdatos-1;i++) {
+		system("clear"); //Linux/Unix (CLS en Windows)
 		cout << "[INGRESANDO DATOS DE CONDUCTOR " << i+1 << "]" << endl;
 		edades[i] = obtener_edad();
 		sexos[i] = validar_unodos("el sexo del conductor es masculino","el sexo del conductor es femenino");
 		ciudades[i] = validar_unodos("la ciudad de registro del carro es Lima","la ciudad de registro del carro es otra");
 	}
+
 	for (i=0;i<=cdatos-1;i++) {
 		if (edades[i]<25) {
 			cont0++;
 		}
 	}
 	p_ed = (cont0/cdatos)*100;
+
 	for (i=0;i<=cdatos-1;i++) {
 		if (sexos[i]==2) {
 			cont1++;
 		}
 	}
 	p_sx = (cont1/cdatos)*100;
+
 	for (i=0;i<=cdatos-1;i++) {
 		if (sexos[i]==1 && edades[i]>=15 && edades[i]<=30) {
 			cont2++;
 		}
 	}
 	p_ed2 = (cont2/cdatos)*100;
+
 	for (i=0;i<=cdatos-1;i++) {
 		if (ciudades[i]==2) {
 			cont3++;
 		}
 	}
 	p_ci = (cont3/cdatos)*100;
-	
-	cout << endl; // no hay forma directa de borrar la pantalla con C++ estandar
-	cout << "[ESTADISTICAS FINALES]" << endl;
-	cout << "" << endl;
+
+	system("clear"); //Linux/Unix (CLS en Windows)
+	cout << "[ESTADISTICAS FINALES]" << endl << endl;
 	cout << "El " << p_ed << "% de conductores tiene menos de 25 anios." << endl;
-	cout << "(" << cont0 << " de " << cdatos << ")" << endl;
-	cout << "" << endl;
-	cout << "El " << p_ed << "% de conductores es de sexo femenino." << endl;
-	cout << "(" << cont1 << " de " << cdatos << ")" << endl;
-	cout << "" << endl;
-	cout << "El " << p_ed << "% de conductores es de sexo masculino y tiene entre 15 y 30 anios." << endl;
-	cout << "(" << cont2 << " de " << cdatos << ")" << endl;
-	cout << "" << endl;
-	cout << "El " << p_ed << "% de conductores registro su carro fuera de Lima." << endl;
-	cout << "(" << cont3 << " de " << cdatos << ")" << endl;
-	cout << "" << endl;
-	
+	cout << "(" << cont0 << " de " << cdatos << ")" << endl << endl;
+	cout << "El " << p_sx << "% de conductores es de sexo femenino." << endl;
+	cout << "(" << cont1 << " de " << cdatos << ")" << endl << endl;
+	cout << "El " << p_ed2 << "% de conductores es de sexo masculino y tiene entre 15 y 30 anios." << endl;
+	cout << "(" << cont2 << " de " << cdatos << ")" << endl << endl;
+	cout << "El " << p_ci << "% de conductores registro su carro fuera de Lima." << endl;
+	cout << "(" << cont3 << " de " << cdatos << ")" << endl << endl;
 	return 0;
 }

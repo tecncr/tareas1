@@ -4,7 +4,7 @@
 using namespace std;
 
 int ingresar_validar_positivo() {
-	int num;
+	long long int num;
 	do {
 		cout << "Ingrese el numero binario que desee convertir: ";
 		cin >> num;
@@ -18,7 +18,7 @@ int ingresar_validar_positivo() {
 
 int ingresar_validar_bin() {
 
-	int binario, in, tmp, u_cifra;
+	long long int binario, in, tmp, u_cifra;
 
 	in = ingresar_validar_positivo();
 	tmp = in;
@@ -26,7 +26,7 @@ int ingresar_validar_bin() {
 	while (tmp>0) {
 		// Verificacion de digitos binarios
 		u_cifra = tmp%10;
-		tmp = int(tmp/10);
+		tmp = floor(tmp/10);
 		if (u_cifra>1) {
 			cout << "El numero ingresado contiene digitos no binarios." << endl;
 			cout << "Intentelo nuevamente." << endl;
@@ -40,7 +40,7 @@ int ingresar_validar_bin() {
 }
 
 int main(int argc, char * argv[]){
-	int bin, dec, tmp, u, x;
+	long long int bin, dec, tmp, u, x;
 	bin = ingresar_validar_bin();
 	tmp = bin;
 	x = 1;
@@ -48,10 +48,10 @@ int main(int argc, char * argv[]){
 	// Conversion de binario a decimal mediante "divisiones sucesivas inversas"
 	while (bin>0) {
 		u = bin%10;
-		bin = int(bin/10);
+		bin = floor(bin/10);
 		dec = dec+(u*x);
+		x *= 2;
 	}
 	cout << endl << "El numero binario " << tmp << " convertido a decimal es: " << dec << endl;
 	return 0;
 }
-
