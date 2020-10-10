@@ -31,7 +31,7 @@ Algoritmo DIFERENCIA_ARREGLOS
 	Escribir ""
 	
 	n1 <- ingresar_validar_tam(TAM_MAX, " A")
-	Dimension a[n1]
+	Dimension a[n1], c[n1]
 	Limpiar Pantalla
 	Escribir "[RELLENANDO ARREGLO A]"
 	rellenar_arreglo(a, n1)
@@ -43,12 +43,6 @@ Algoritmo DIFERENCIA_ARREGLOS
 	Escribir "[RELLENANDO ARREGLO B]"
 	rellenar_arreglo(b, n2)
 	Limpiar Pantalla
-	
-	Si n1>n2
-		Dimension c[n1]
-	SiNo
-		Dimension c[n2]
-	FinSi
 	
 	Para i <- 0 Hasta n1-1 Con Paso 1 Hacer
 		coincidencias <- 0

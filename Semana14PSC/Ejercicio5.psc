@@ -21,14 +21,25 @@ Funcion rellenar_arreglo(arreglo Por Referencia, tam)
 	Fin Para
 FinFuncion
 
-Algoritmo CANTIDAD_DE_COINCIDENCIAS_EN_ARREGLO
-	Definir n1, coincidencias, i Como Entero
-	Definir arr, elemento Como Caracter
+Funcion ordenar_arreglo_burbuja(arreglo Por Referencia, tam)
+	Definir i, temp Como Entero
+	Para i<-1 Hasta tam-1 Con Paso 1 Hacer
+		Para j<-0 Hasta tam-2 Con Paso 1 Hacer
+			Si arreglo[j] > arreglo[j+1]
+				temp <- arreglo[j]
+				arreglo[j] <- arreglo[j+1]
+				arreglo[j+1] <- temp
+			FinSi
+		FinPara
+	FinPara
+FinFuncion
+
+Algoritmo MEDIANA_DE_UN_ARREGLO
+	Definir arr, n1 Como Entero
+	Definir mediana Como Real
 	TAM_MAX <- 100
-	coincidencias <- 0
-	
-	Escribir "Programa que muestra la cantidad de veces que un elemento aparece"
-	Escribir "dentro de un arreglo."
+
+	Escribir "Programa que muestra la mediana de un arreglo de enteros."
 	Escribir ""
 	
 	n1 <- ingresar_validar_tam(TAM_MAX, "")
@@ -36,17 +47,15 @@ Algoritmo CANTIDAD_DE_COINCIDENCIAS_EN_ARREGLO
 	Limpiar Pantalla
 	Escribir "[RELLENANDO ARREGLO]"
 	rellenar_arreglo(arr, n1)
-	Limpiar Pantalla
 	
-	Escribir Sin Saltar "Ingrese el elemento que desea buscar en el arreglo: "
-	Leer elemento
+	ordenar_arreglo_burbuja(arr, n1)
 	
-	Para i <- 0 Hasta n1-1 Con Paso 1 Hacer
-		Si arr[i] = elemento
-			coincidencias <- coincidencias+1
-		FinSi
-	Fin Para
+	Si n1%2 = 0
+		mediana <- (arr[(n1/2)-1]+arr[n1/2])/2
+	SiNo
+		mediana <- arr[((n1+1)/2)-1]
+	FinSi
 	
 	Escribir ""
-	Escribir "El elemento ",elemento," aparece ",coincidencias," veces en el arreglo."
+	Escribir "La mediana del arreglo ingresado es: ",mediana
 FinAlgoritmo

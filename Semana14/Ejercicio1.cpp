@@ -1,5 +1,10 @@
-#include "iostream"
+#include <iostream>
 using namespace std;
+
+int ingresar_validar_tam(int t_max);
+void rellenar_arreglo(char arreglo[], int tam);
+char encontrar_mayor(char arreglo[], int tam);
+char encontrar_menor(char arreglo[], int tam);
 
 int ingresar_validar_tam(int t_max) {
 	int n;
