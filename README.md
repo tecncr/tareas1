@@ -30,10 +30,6 @@ Contiene los archivos **_.cpp_** correspondientes a la solución del **TALLER No
 
 Contiene los archivos **_.cpp_** correspondientes a la solución del **TALLER No 6 – SUBPROGRAMAS**
 &nbsp;
-> Semana10
-
-Contiene los archivos **_.cpp_** correspondientes a la solución del **TALLER No 6 – SUBPROGRAMAS**
-&nbsp;
 > Semana14
 
 Contiene los archivos **_.cpp_** correspondientes a la solución del **TALLER No 7 – ARREGLOS**
