@@ -1,40 +1,6 @@
 #include <iostream>
+#include "misfunciones.h"
 using namespace std;
-
-int ingresar_validar_tam(int t_max, string nombre_arr);
-void rellenar_arreglo(int arreglo[], int tam);
-void limpiar_pantalla();
-
-int ingresar_validar_tam(int t_max, string nombre_arr) {
-	int n;
-	do {
-		cout << "Ingrese la cantidad de elementos del arreglo" << nombre_arr << ": ";
-		cin >> n;
-		if (n<1) {
-			cout << "El arreglo no puede tener menos de 1 elemento" << endl;
-		}
-		if (n>t_max) {
-			cout << "Para evitar desbordamiento se ha limitado la cantidad maxima de elementos a " << t_max << endl;
-			cout << "Por favor ingrese una cantidad inferior o igual a " << t_max << endl;
-		}
-	} while (n<1 || n>t_max);
-	return n;
-}
-
-void rellenar_arreglo(int arreglo[], int tam) {
-	for (int i=0; i<=tam-1; i++) {
-		cout << "Ingrese el elemento " << i+1 << " de " << tam << ": ";
-		cin >> arreglo[i];
-	}
-}
-
-void limpiar_pantalla() {
-	#ifdef _WIN32
-		system("CLS"); //Limpiar pantalla en Windows
-	#else
-		system("clear"); //Limpiar pantalla en Linux
-	#endif
-}
 
 int main() {
 	int n1, n2, coincidencias, cont_arr_c = 0, i, j, k;
@@ -47,14 +13,14 @@ int main() {
 	int a[n1], c[n1];
 	limpiar_pantalla();
 	cout << "[RELLENANDO ARREGLO A]" << endl;
-	rellenar_arreglo(a,n1);
+	rellenar_arreglo_enteros(a,n1);
 	limpiar_pantalla();
 
 	n2 = ingresar_validar_tam(TAM_MAX," B");
 	int b[n2];
 	limpiar_pantalla();
 	cout << "[RELLENANDO ARREGLO B]" << endl;
-	rellenar_arreglo(b,n2);
+	rellenar_arreglo_enteros(b,n2);
 	limpiar_pantalla();
 
 

@@ -1,22 +1,6 @@
 #include <iostream>
+#include "misfunciones.h"
 using namespace std;
-
-int ingresar_validar(int max, string nombre_var);
-
-int ingresar_validar(int max, string nombre_var) {
-	int num;
-	do {
-		cout << "Ingrese el valor de " << nombre_var << ": ";
-		cin >> num;
-		if (max<=num) {
-			cout << "El valor de " << nombre_var << " tiene que ser menor que el de n (" << max << ")" << endl;
-		}
-		if (num<0) {
-			cout << "El valor de " << nombre_var << " no puede ser negativo." << endl;
-		}
-	} while (max<=num || num<0);
-	return num;
-}
 
 int main() {
 	int variables[3];
