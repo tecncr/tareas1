@@ -42,3 +42,7 @@ Contiene los archivos **_.cpp_** correspondientes a la solución del **Primer Ex
 
 Contiene los archivos **_.cpp_** correspondientes a la solución del **Segundo Examen Parcial** tomado el **19 de setiembre del 2020**
 &nbsp;
+> ExamenU3
+
+Contiene los archivos **_.cpp_** correspondientes a la solución del **Tercer Examen Parcial (Final)** tomado el **17 de octubre del 2020**
+&nbsp;
